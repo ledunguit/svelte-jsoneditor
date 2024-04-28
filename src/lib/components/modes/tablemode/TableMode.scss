@@ -12,6 +12,7 @@
   font-size: $font-size-mono;
   color: $text-color;
   line-height: $line-height;
+  border-radius: $border-radius;
 
   &.no-main-menu {
     border-top: $main-border;
@@ -51,6 +52,7 @@
     overflow: auto;
     overflow-anchor: none; // important to prevent Chrome from adjusting the scrollTop based on changing contents (causing an infinite loop)
     scrollbar-gutter: stable;
+    border-radius: 0 0 $border-radius $border-radius;
 
     border-left: $main-border;
     border-right: $main-border;

@@ -9,7 +9,9 @@
   flex-wrap: wrap;
   align-items: stretch;
   position: relative;
-
+  border-radius: $border-radius $border-radius 0 0;
+  padding: 2px;
+  
   // FIXME: should utilize the generic styling in styles.scss
   .jse-button {
     font-family: inherit;
@@ -19,12 +21,12 @@
     background: transparent;
     color: inherit;
     cursor: pointer;
+    border-radius: $border-radius;
 
     width: $menu-button-size;
     height: $menu-button-size;
     padding: $padding-half;
     margin: 0;
-    border-radius: 0;
 
     display: inline-flex;
     align-items: center;
@@ -48,20 +50,18 @@
 
       width: auto;
       height: calc($menu-button-size - $padding);
-      margin: $padding-half 0;
-      padding: 0 $padding-half 1px; // 1px bottom padding for better center alignment (text baseline)
       border: 1px solid $group-button-color;
-
-      &:not(.jse-last) {
-        border-right: none;
-      }
+      margin: $padding-half;
+      padding: 5px 10px;
 
       &.jse-first {
         margin-left: $padding-half;
+        padding: 5px 10px;
       }
 
       &.jse-last {
         margin-right: $padding-half;
+        padding: 5px 10px;
       }
 
       &:hover,

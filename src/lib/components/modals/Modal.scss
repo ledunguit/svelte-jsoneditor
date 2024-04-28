@@ -10,7 +10,7 @@
     --background: #{$svelte-select-background};
     --padding: #{$svelte-select-padding};
     --multi-select-padding: #{$svelte-select-multi-select-padding};
-    --font-size: #{$svelte-select-font-size};
+    --font-size: 0.9rem;
     --height: 36px;
     --multi-item-height: 28px;
     --multi-item-margin: 2px;
@@ -63,7 +63,7 @@
 :global(.bg.jse-modal-bg .jse-modal-window) {
   max-width: 90%;
   margin: 4rem auto 2rem auto;
-  border-radius: 2px;
+  border-radius: $border-radius;
 }
 
 :global(.bg.jse-modal-bg .jse-modal-window.jse-modal-window-sort) {
@@ -98,4 +98,5 @@
   flex-direction: column;
   padding: 0;
   max-height: none;
+  border-radius: $border-radius;
 }

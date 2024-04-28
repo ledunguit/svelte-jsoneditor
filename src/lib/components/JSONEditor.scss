@@ -11,6 +11,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  border-radius: $border-radius;
 
   &.jse-focus {
   }

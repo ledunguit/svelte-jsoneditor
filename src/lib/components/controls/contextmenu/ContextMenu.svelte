@@ -65,9 +65,8 @@
     }
   }
 
-  function unknownMenuItem(item: MenuItem): string {
-    console.error('Unknown type of context menu item', item)
-    return '???'
+  function unknownMenuItem(): string {
+    return ''
   }
 </script>
 
@@ -104,21 +103,19 @@
                     {columnItem.text}
                   </div>
                 {:else}
-                  {unknownMenuItem(columnItem)}
+                  {unknownMenuItem()}
                 {/if}
               {/each}
             </div>
           {:else if isMenuSeparator(rowItem)}
             <div class="jse-separator" />
           {:else}
-            {unknownMenuItem(rowItem)}
+            {unknownMenuItem()}
           {/if}
         {/each}
       </div>
-    {:else if isMenuSeparator(item)}
-      <div class="jse-separator" />
     {:else}
-      {unknownMenuItem(item)}
+      {unknownMenuItem()}
     {/if}
   {/each}
 

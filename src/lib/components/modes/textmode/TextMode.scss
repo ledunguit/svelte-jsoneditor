@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   background: $background-color;
+  border-radius: $border-radius;
 
   &.no-main-menu {
     border-top: $main-border;
@@ -45,6 +46,11 @@
     :global(.cm-editor) {
       flex: 1;
       overflow: hidden;
+
+      :global(.cm-textfield) {
+        border-radius: $border-radius;
+        padding: 4px 10px;
+      }
 
       :global(.cm-scroller) {
         font-family: $font-family-mono;
@@ -113,6 +119,13 @@
         font-size: $font-size;
       }
 
+      :global(.cm-search label) {
+        display: inline-flex;
+        gap: 3px;
+        align-items: center;
+        padding: $padding-half $padding;
+      }
+
       :global(.cm-search input) {
         font-family: $font-family;
         font-size: $font-size-text-mode-search;
@@ -134,10 +147,11 @@
         text-transform: capitalize;
         padding: $padding-half $padding;
         margin: 0;
+        border-radius: $border-radius;
 
         &:hover {
-          color: $panel-button-color-highlight;
-          background: $panel-button-background-highlight;
+          color: $white;
+          background: $theme-color;
         }
       }
 

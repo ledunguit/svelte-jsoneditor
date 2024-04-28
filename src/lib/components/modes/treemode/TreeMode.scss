@@ -12,6 +12,7 @@
   font-size: $font-size-mono;
   color: $text-color;
   line-height: $line-height;
+  border-radius: $border-radius;
 
   .jse-hidden-input-label {
     .jse-hidden-input {
@@ -50,6 +51,7 @@
     flex-direction: column;
     border-left: $main-border;
     border-right: $main-border;
+    border-radius: 0 0 $border-radius $border-radius;
 
     &:last-child {
       border-bottom: $main-border;

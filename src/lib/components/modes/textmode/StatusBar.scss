@@ -2,14 +2,16 @@
 
 .jse-status-bar {
   background: $panel-background;
-  color: $panel-color-readonly;
+  color: $theme-color;
   font-family: $font-family-mono;
-  font-size: $font-size-mono;
+  font-size: 0.8rem;
   margin: 0;
+  padding: 5px;
 
   border-top: $panel-border;
   border-left: $main-border;
   border-right: $main-border;
+  border-radius: 0 0 $border-radius $border-radius;
 
   &:last-child {
     border-bottom: $main-border;

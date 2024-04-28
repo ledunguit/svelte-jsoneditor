@@ -941,6 +941,7 @@ See https://github.com/sveltejs/kit/issues/981
     line-height: 72px;
     font-size: 72px;
     font-family: 'Comic Sans MS', 'Courier New', serif;
+    border-radius: 10px;
   }
 
   .mode-toggle {

@@ -5,7 +5,6 @@ $input-padding: 5px;
 $search-box-offset: 10px;
 $navigation-bar-height: 27px; // TODO: having this hardcoded is ugly
 $search-box-offset-navigation-bar: $search-box-offset + $navigation-bar-height;
-$border-radius: 3px;
 
 $padding-half: calc(0.5 * $padding);
 $padding-double: calc(2 * $padding);
@@ -21,9 +20,10 @@ $errors-overview-max-height: 25%;
   color: inherit;
   cursor: pointer;
   font-family: $font-family;
-  font-size: $font-size;
+  font-size: 0.8rem;
   padding: $menu-padding;
   margin: 0;
+  border-radius: $border-radius;
 }
 
 @mixin jsoneditor-context-menu-button {
@@ -33,9 +33,15 @@ $errors-overview-max-height: 25%;
   white-space: nowrap;
   padding: $padding;
   color: inherit;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
   &:hover {
     background: $context-menu-background-highlight;
+    cursor: pointer;
+    color: white;
   }
 
   &:focus {
@@ -63,7 +69,7 @@ $errors-overview-max-height: 25%;
   background: $button-primary-background;
   color: $button-primary-color;
   padding: $padding $padding-double;
-  border-radius: $border-radius;
+  border-radius: 20px;
 
   &:hover {
     background: $button-primary-background-highlight;
@@ -95,11 +101,12 @@ $errors-overview-max-height: 25%;
   border: $input-border;
   outline: none;
   box-sizing: border-box;
-  padding: $padding-half;
   font-family: $font-family-mono;
   font-size: $font-size-mono;
   color: inherit;
   background: $input-background;
+  border-radius: $border-radius;
+  padding: 5px 10px;
 
   &:focus {
     border: $input-border-focus;
@@ -154,4 +161,5 @@ $errors-overview-max-height: 25%;
   line-height: normal;
   background: $modal-background;
   color: $text-color;
+  border-radius: $border-radius;
 }

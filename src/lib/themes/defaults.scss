@@ -34,7 +34,7 @@ $line-height: var(--jse-line-height, calc(1em + 4px));
 $indent-size: var(--jse-indent-size, calc(1em + 4px));
 $color-picker-button-size: var(--jse-color-picker-button-size, 1em);
 $padding: var(--jse-padding, 10px);
-$theme-color: var(--jse-theme-color, #3883fa);
+$theme-color: var(--jse-theme-color, rgb(66, 113, 203));
 $theme-color-highlight: var(--jse-theme-color-highlight, #5f9dff);
 $background-color: var(--jse-background-color, $white);
 $text-color: var(--jse-text-color, $black);
@@ -43,6 +43,9 @@ $text-color-inverse: var(--jse-text-color-inverse, $white);
 $error-color: var(--jse-error-color, #ee5341);
 $warning-color: var(--jse-warning-color, #fdc539);
 $info-color: var(--jse-info-color, #4f91ff);
+
+/* border */
+$border-radius: var(--jse-border-radius, 10px);
 
 /* main, menu, modal */
 $main-border: var(--jse-main-border, (1px solid #d7d7d7));
@@ -87,9 +90,9 @@ $navigation-bar-background-highlight: var(--jse-navigation-bar-background-highli
 $navigation-bar-dropdown-color: var(--jse-navigation-bar-dropdown-color, #656565);
 
 /* context menu */
-$context-menu-background: var(--jse-context-menu-background, #656565);
-$context-menu-background-highlight: var(--jse-context-menu-background-highlight, #7a7a7a);
-$context-menu-color: var(--jse-context-menu-color, $text-color-inverse);
+$context-menu-background: var(--jse-context-menu-background, #ffffff);
+$context-menu-background-highlight: var(--jse-context-menu-background-highlight, rgb(66, 113, 203));
+$context-menu-color: var(--jse-context-menu-color, black);
 $context-menu-color-disabled: var(--jse-context-menu-color-disabled, #9d9d9d);
 $context-menu-separator-color: var(--jse-context-menu-separator-color, #7a7a7a);
 $context-menu-pointer-hover-background: var(--jse-context-menu-pointer-hover-background, #b2b2b2);
@@ -162,7 +165,7 @@ $input-border-focus: var(
   --jse-input-border-focus,
   1px solid var(--jse-input-border-focus, $theme-color)
 );
-$input-radius: var(--jse-input-radius, 3px);
+$input-radius: var(--jse-input-radius, 10px);
 $button-background: var(--jse-button-background, #e0e0e0);
 $button-background-highlight: var(--jse-button-background-highlight, #e7e7e7);
 $button-color: var(--jse-button-color, $text-color);
@@ -198,7 +201,7 @@ $message-action-background-highlight: var(
 /* svelte-select */
 $svelte-select-item-is-active-bg: var(--jse-item-is-active-bg, #3883fa);
 $svelte-select-border: var(--jse-svelte-select-border, (1px solid #d8dbdf));
-$svelte-select-border-radius: var(--jse-svelte-select-border-radius, 3px);
+$svelte-select-border-radius: var(--jse-svelte-select-border-radius, 10px);
 $svelte-select-background: var(--jse-svelte-select-background, $white);
 $svelte-select-padding: var(--jse-svelte-select-padding, (0 10px));
 $svelte-select-font-size: var(--jse-svelte-select-font-size, $font-size);

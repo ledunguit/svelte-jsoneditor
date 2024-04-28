@@ -3,7 +3,7 @@
 .jse-navigation-bar-path-editor {
   flex: 1;
   display: flex;
-  border: $edit-outline;
+  border-bottom: 1px dashed;
   background: $background-color;
 
   input.jse-navigation-bar-text {

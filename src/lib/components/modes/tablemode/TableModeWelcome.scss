@@ -6,6 +6,7 @@
   flex-direction: column;
   overflow: auto;
   align-items: center;
+  border-radius: 0 0 $border-radius $border-radius;
 
   border-left: $main-border;
   border-right: $main-border;
@@ -33,10 +34,13 @@
 
     .jse-nested-arrays-info {
       color: $panel-color-readonly;
+      font-size: 0.8rem;
     }
 
     button.jse-nested-array-action {
       @include jsoneditor-button-primary;
+      font-size: 0.85rem;
+      border-radius: 20px;
 
       text-align: left;
 

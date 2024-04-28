@@ -1,7 +1,6 @@
 @import '../../styles';
 
 .jse-dropdown-button {
-  flex: 1;
   line-height: normal;
 
   $background: $context-menu-background;
@@ -11,6 +10,7 @@
   position: relative;
   padding: 0;
   display: flex;
+  border-radius: $border-radius;
 
   ul {
     margin: 0;
@@ -28,7 +28,6 @@
 
     width: 2em;
     background: $context-menu-background;
-    color: $context-menu-color;
 
     &.jse-visible {
       background: $background;
@@ -36,6 +35,7 @@
 
     &:hover {
       background: $context-menu-background-highlight;
+      color: white;
     }
 
     &:focus {
@@ -46,8 +46,6 @@
       color: $context-menu-color-disabled;
       background: unset;
     }
-
-    border-radius: 0;
   }
 
   .jse-dropdown-items {
