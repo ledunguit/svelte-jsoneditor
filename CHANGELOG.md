@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.26.0](https://github.com/ledunguit/svelte-jsoneditor/compare/v0.25.0...v0.26.0) (2024-04-28)
+
+
+### Features
+
+* change style with border-radius ([33a5c77](https://github.com/ledunguit/svelte-jsoneditor/commit/33a5c7772371a74a868b55623d9799bed2ab6d27))
+
 ## [0.25.0](https://github.com/ledunguit/svelte-jsoneditor/compare/v0.24.0...v0.25.0) (2024-04-28)
 
 
