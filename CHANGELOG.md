@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.25.0](https://github.com/ledunguit/svelte-jsoneditor/compare/v0.24.0...v0.25.0) (2024-04-28)
+
+
+### Bug Fixes
+
+* change vanilla package info ([1c53e8f](https://github.com/ledunguit/svelte-jsoneditor/commit/1c53e8fd8dbcad6c188f943124ee01761948cec3))
+
 ## 0.24.0 (2024-04-28)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "@ledangdung/svelte-jsoneditor",
   "description": "A web-based tool to view, edit, format, transform, and validate JSON",
-  "version": "0.24.0",
+  "version": "0.25.0",
   "homepage": "https://github.com/ledunguit/svelte-jsoneditor",
   "repository": {
     "type": "git",
